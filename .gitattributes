@@ -1,0 +1,10 @@
+# Normalize text files across operating systems.
+* text=auto
+
+# Keep Python source and project text files LF-terminated.
+*.py text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+
+# Images and other binary assets must not be modified by line-ending conversion.
+*.png binary
