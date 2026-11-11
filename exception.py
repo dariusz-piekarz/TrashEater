@@ -1,6 +1,7 @@
 from typing import Any
 from abc import ABC, abstractmethod
 
+
 class ErrorABC(Exception, ABC):
     """Abstrac class for an errror."""
 
@@ -12,6 +13,6 @@ class ErrorABC(Exception, ABC):
     @abstractmethod
     def generate_error_msg(args: Any, **kwargs: object) -> str:
         pass
-        
+
     def __str__(self) -> str:
         return self.message

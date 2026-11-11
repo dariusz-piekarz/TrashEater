@@ -1,0 +1,2 @@
+[flake8]
+exclude = .git,__pycache__,build,dist,trasheater,*.egg-info,.pytest_cache

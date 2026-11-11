@@ -24,7 +24,9 @@ def test_finds_duplicate_empty_and_small_files(tmp_path: Path) -> None:
 
     groups = find_duplicates([first, second, empty_first, empty_second])
 
-    assert {frozenset(paths) for paths in groups.values()} == {
+    assert {
+        frozenset(paths) for paths in groups.values()
+    } == {
         frozenset((first, second)),
         frozenset((empty_first, empty_second)),
     }
@@ -43,7 +45,9 @@ def test_finds_empty_files_recursively(tmp_path: Path) -> None:
     assert is_empty_directory(empty_dir)
 
 
-def test_finds_junk_files_with_case_and_compound_extensions(tmp_path: Path) -> None:
+def test_finds_junk_files_with_case_and_compound_extensions(
+    tmp_path: Path,
+) -> None:
     candidates = [
         tmp_path / "cache.PYC",
         tmp_path / "paper.synctex.gz",

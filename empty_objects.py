@@ -1,10 +1,10 @@
 import pathlib as pth
 
 
-def is_empty_directory(folder: pth.Path) ->  bool:
+def is_empty_directory(folder: pth.Path) -> bool:
     if not folder.is_dir():
         raise NotADirectoryError(f"A path: {folder} is not a valid path!")
-    
+
     if len(list(folder.glob("*"))) == 0:
         return True
     return False

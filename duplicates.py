@@ -38,7 +38,9 @@ def filter_by_size(files: list[pth.Path]) -> list[pth.Path]:
     return flatten_iterable(sizes.values())
 
 
-def find_partial_hashes(files: list[pth.Path], size: int = 4 * KB) -> dict[str, list[pth.Path]]:
+def find_partial_hashes(
+    files: list[pth.Path], size: int = 4 * KB
+) -> dict[str, list[pth.Path]]:
     hashes: dict[str, list[pth.Path]] = {}
 
     for f in files:
