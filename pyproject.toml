@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trash-eater"
+version = "0.1.0"
+description = "Small utilities for finding unnecessary and duplicate files."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["ImageHash>=4.3", "Pillow>=10"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["trash_eater"]
+py-modules = [
+  "duplicates",
+  "empty_objects",
+  "exception",
+  "filetree_stats",
+  "image_duplicates",
+  "images",
+  "junk_files",
+  "old_files",
+  "similar_names",
+  "utils",
+]
