@@ -9,8 +9,12 @@ from duplicates import (
     sha256_file,
 )
 from empty_objects import empty_files, is_empty_directory, is_fileless_tree
-from image_duplicates import image_duplicates, similar_images
-from images import broken_images, tiny_images
+from images import (
+    broken_images,
+    image_duplicates,
+    similar_images,
+    tiny_images,
+)
 
 __all__ = [
     "broken_images",

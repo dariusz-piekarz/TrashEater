@@ -71,4 +71,16 @@ JUNK_EXTENSIONS = frozenset({
 
 
 def find_junk_files(files: list[pth.Path]) -> list[pth.Path]:
+    """Select paths with known temporary or generated-file extensions.
+
+    Parameters
+    ----------
+    files : list of pathlib.Path
+        Paths to inspect.
+
+    Returns
+    -------
+    list of pathlib.Path
+        Matching paths in their original order.
+    """
     return filter_files(files, JUNK_EXTENSIONS)

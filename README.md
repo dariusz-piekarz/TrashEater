@@ -10,6 +10,17 @@ python -m pip install .
 
 The distribution requires Python 3.10 or newer. Image helpers use Pillow and ImageHash.
 
+## Example
+
+Install the package, then run the example from the repository root against a folder:
+
+```console
+python -m pip install -e .
+python -m example.example photos
+```
+
+The example reports findings without deleting or modifying files.
+
 ## Quick start
 
 ```python
