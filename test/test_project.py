@@ -1,3 +1,5 @@
+"""Test the file-inspection utilities."""
+
 import datetime
 import os
 from pathlib import Path

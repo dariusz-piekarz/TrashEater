@@ -1,3 +1,5 @@
+"""Find empty files and directories."""
+
 import pathlib as pth
 
 

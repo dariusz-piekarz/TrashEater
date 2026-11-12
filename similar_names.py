@@ -1,3 +1,5 @@
+"""Find file paths with similar names."""
+
 import pathlib as pth
 from rapidfuzz.fuzz import ratio
 from itertools import combinations

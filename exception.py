@@ -1,3 +1,5 @@
+"""Define a base class for exceptions with generated messages."""
+
 from typing import Any
 from abc import ABC, abstractmethod
 

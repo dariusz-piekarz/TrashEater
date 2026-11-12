@@ -1,0 +1,1 @@
+"""Collect file and directory statistics across a tree."""

@@ -1,3 +1,5 @@
+"""Find duplicate, similar, broken, and small images."""
+
 import imagehash as ih
 import pathlib as pth
 

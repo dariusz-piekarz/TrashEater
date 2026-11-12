@@ -1,3 +1,5 @@
+"""Find duplicate files by comparing their content hashes."""
+
 import hashlib as hs
 import pathlib as pth
 

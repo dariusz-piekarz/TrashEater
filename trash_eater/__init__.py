@@ -1,4 +1,4 @@
-"""Utilities for finding duplicate, empty, and invalid files."""
+"""Expose public utilities for inspecting files and images."""
 
 from duplicates import (
     find_duplicates,

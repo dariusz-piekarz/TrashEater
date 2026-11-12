@@ -1,3 +1,5 @@
+"""Demonstrate the file-inspection utilities."""
+
 import argparse
 from pathlib import Path
 

@@ -1,3 +1,5 @@
+"""Find files older than a specified age."""
+
 import pathlib as pth
 import datetime
 

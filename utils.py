@@ -1,3 +1,5 @@
+"""Provide helpers for filtering files and flattening iterables."""
+
 from collections.abc import Iterable
 from typing import Any
 

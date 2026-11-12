@@ -1,3 +1,5 @@
+"""Identify temporary and generated files."""
+
 import pathlib as pth
 from utils import filter_files
 
